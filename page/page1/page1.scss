@@ -1,0 +1,90 @@
+
+ 
+  
+    .page1 {
+      
+      background-image: url(../../img/page1/COVER1.png);
+      background-size: contain;
+      width: 33em;
+      height: 722px;
+      margin-top: 30px;
+      margin-left: 33px;
+      margin-bottom: 20px;
+      margin-right: 0px;
+      border: 0px 2px;
+      box-shadow: inset -8px -1px 20px 11px black;
+      border-radius: 0px 12px 25px 0px;
+      position: absolute;
+      top: -2px;
+      left: 446px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-around;
+    
+      z-index: 100;
+      perspective: 900px;
+      transform-origin: 0% 0%;
+      transform-style: preserve-3d;
+      perspective-origin: 0px;
+      font-family: 'Petit Formal Script', cursive;
+    
+       
+       .head{
+          .titre{
+            font-size: 30px;
+            position: absolute;
+            top: 0;
+          }
+
+
+       }
+
+      
+        .back{
+          .image1 {
+          position: absolute;
+          z-index: 5;
+          top: 85px;
+          left: 99px;
+          width: 327px;
+          height: 304px;
+          perspective: 1000px;
+        }
+        .image2 {
+          position: absolute;
+          z-index: 4;
+          top: 135px;
+          left: 58px;
+          width: 357px;
+          height: 289px;
+          perspective: 1000px;
+        }
+        .image3 {
+          position: absolute;
+          z-index: 4;
+          top: 30px;
+          left: 217px;
+          width: 194px;
+          height: 161px;
+          perspective: 1000px;
+        }
+        .image4 {
+          position: absolute;
+          z-index: 1;
+          top: 30px;
+          left: 2px;
+          width: 526px;
+          height: 455px;
+          perspective: 1000px;
+        }
+        img {
+          width: 520px;
+          height: 712px;
+          border-radius: 0px 12px 25px 0px;
+        }
+          
+        }
+      
+      }
+ 

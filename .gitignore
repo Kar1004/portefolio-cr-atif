@@ -1,7 +1,5 @@
-Maintainable-CSS-with-SASS-pt04ch02_start
 
-.vscode
 
-.sass-cache
-
-.style.scss
+vscode
+css.map
+sass-cache
