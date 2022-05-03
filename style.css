@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: space-around;
+}
+body #container {
+  background-color: #86492c;
+  width: 62em;
+  height: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin: 50px;
+  perspective: 1000px;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background: linear-gradient(135deg, #00000055 25%, transparent 25%) -10px 0/20px 20px, linear-gradient(225deg, #000000 25%, transparent 25%) -10px 0/20px 20px, linear-gradient(315deg, #00000055 25%, transparent 25%) 0px 0/20px 20px, linear-gradient(45deg, #000000 25%, #e5e5f7 25%) 0px 0/20px 20px;
+  border: 18px black solid;
+  border-radius: 18px;
+  box-shadow: 1px 1px 20px 8px black;
+  position: relative;
+}
+/* pensée a une couverture  */
+body #container .page1 {
+  background-color: white;
+  width: 28em;
+  height: 722px;
+  margin-top: 30px;
+  margin-left: 33px;
+  margin-bottom: 20px;
+  margin-right: 0px;
+  border: 0px 2px;
+  box-shadow: inset -8px -1px 20px 11px black;
+  border-radius: 0px 12px 25px 0px;
+  position: absolute;
+}
+
+/* la page 2 l'effet tournure de page est crée grace à la perspective qui permet un effet étendu ,le transform origine permet  la page en tournant de rester à l'abscise et à l'ordonné zéro
+le transforme-style 3d permet un rendu agréable*/
+body #container .page2 {
+  background-color: beige;
+  width: 28em;
+  height: 722px;
+  margin-top: 30px;
+  margin-right: 33px;
+  margin-bottom: 20px;
+  box-shadow: inset 13px 0px 20px 9px black;
+  border-radius: 12px 0px 0px 22px;
+  position: absolute;
+  left: 476px;
+  transition: 1.5s;
+  perspective: 1200px;
+  transform-origin: 0% 0%;
+  transform-style: preserve-3d;
+  perspective-origin: 0px 0px;
+  
+}
+
+/* l'effet hover sera remplacé par du jquery mouseenter,car le hover est trop problématique */
+body #container .page2:hover {
+  transform: rotateY(-180deg) translate(-23px) rotateX(0deg);
+  transform-origin: top left 1px;
+  border-radius: 12px 0px 0px 12px;
+}
+body #container .page3 {
+  background-color: #e5e5f7;
+  width: 29em;
+  height: 722px;
+  margin-top: 30px;
+  margin-right: 33px;
+  margin-bottom: 20px;
+  box-shadow: inset 13px 0px 20px 9px black;
+  border-radius: 12px 0px 0px 22px;
+  position: absolute;
+  z-index: -1;
+  left: 473px;
+  border-radius: 12px 0px 0px 22px;
+}
+
+/*# sourceMappingURL=style.css.map */

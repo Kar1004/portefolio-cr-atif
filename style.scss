@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    display: flex;
+    justify-content: space-around;
+   
+
+#container{
+    background-color: rgb(134, 73, 44);
+    width: 62em;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 50px;
+    perspective: 1000px;
+    background-color: #e5e5f7;
+opacity: 0.8;
+background: linear-gradient(135deg, #00000055 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #000000 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #00000055 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #000000 25%, #e5e5f7 25%) 0px 0/ 20px 20px;
+border:  18px black solid;
+border-radius: 18px;
+    box-shadow: 1px 1px 20px 8px black;
+    position: relative;
+.page1{
+    background-color: rgb(255, 255, 255);
+    width: 28em;
+    height: 722px;
+    margin-top: 30px;
+    margin-left: 33px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    border:0px 2px ;
+    box-shadow: inset -8px -1px 20px 11px black;
+    border-radius: 0px 12px 25px 0px;
+    position: absolute;
+}
+.page2{
+    background-color: beige;
+    width: 28em;
+    height: 722px;
+    margin-top: 30px;
+    margin-right: 33px;
+    margin-bottom: 20px;
+    box-shadow: inset 13px 0px 20px 9px black;
+    border-radius: 12px 0px 0px 22px;
+    position: absolute;
+    left: 476px;
+    transition: 1.5s;
+    perspective: 1200px;
+    transform-origin: 0% 0%;
+    transform-style: preserve-3d;
+    perspective-origin: 0px 0px;
+    perspective-origin: 0px;
+    
+
+        &:hover{
+            transform: rotateY(-180deg) translate(-23px) rotateX(0deg);
+            transform-origin: top left 1px;
+            border-radius: 12px 0px 0px 12px;
+    }
+
+   
+  
+
+
+}
+
+.page3{
+    background-color: #e5e5f7;
+    width: 29em;
+    height: 722px;
+    margin-top: 30px;
+    margin-right: 33px;
+    margin-bottom: 20px;
+    box-shadow: inset 13px 0px 20px 9px rgb(0, 0, 0);
+    border-radius: 12px 0px 0px 22px;
+    position: absolute;
+    z-index: -1;
+    left: 473px;
+    border-radius: 12px 0px 0px 22px;
+}
+
+
+
+}
+}
